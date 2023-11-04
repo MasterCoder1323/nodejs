@@ -15,7 +15,8 @@ jobs:
         run: npm install
 
       - name: Build the Node.js server
-        run: npm run webpack
+        run: npm i -g webpack
+        run: webpack
 
       - name: Deploy the Node.js server to GitHub Pages
         uses: actions/deploy-pages@v2
