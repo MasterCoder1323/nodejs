@@ -14,8 +14,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build the Node.js server
+      - name: Install Webpack
         run: npm i -g webpack
+      - name: Webpack
         run: webpack
 
       - name: Deploy the Node.js server to GitHub Pages
